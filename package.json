@@ -1,0 +1,23 @@
+{
+  "name": "ninjaglucose",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.26.0",
+    "@zeppos/device-types": "^3.0.0",
+    "eslint": "^9.26.0",
+    "globals": "^16.0.0"
+  },
+  "dependencies": {
+    "@aws-crypto/sha256-js": "^5.2.0",
+    "@silver-zepp/easy-storage": "^1.6.7-b",
+    "@zeppos/zml": "^0.0.39",
+    "buffer": "^6.0.3"
+  }
+}

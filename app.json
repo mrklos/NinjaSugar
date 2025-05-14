@@ -1,0 +1,86 @@
+{
+  "configVersion": "v3",
+  "app": {
+    "appId": 29432,
+    "appName": "NinjaSugar",
+    "appType": "app",
+    "version": {
+      "code": 1,
+      "name": "1.0.0"
+    },
+    "icon": "icon.png",
+    "vender": "mrklos",
+    "description": "Four more years..."
+  },
+  "permissions": [
+    "data:os.device.info",
+    "device:os.notification",
+    "device:os.local_storage",
+    "device:os.alarm",
+    "device:os.bg_service"
+  ],
+  "runtime": {
+    "apiVersion": {
+      "compatible": "3.0.0",
+      "target": "3.0.0",
+      "minVersion": "3.0"
+    }
+  },
+  "targets": {
+    "default": {
+      "module": {
+        "page": {
+          "pages": [
+            "views/page/index",
+            "views/glucoseWidget/index",
+            "views/glucoseAlert/index"
+          ]
+        },
+        "app-service": {
+          "services": [
+            "app-service/FetchGlucoseService"
+          ]
+        },
+        "app-side": {
+          "path": "app-side/index"
+        },
+        "setting": {
+          "path": "views/settings/index"
+        },
+        "secondary-widget": {
+          "widgets": [
+            {
+              "path": "views/glucoseWidget/index",
+              "icon": "icon.png",
+              "name": "Glucose Widget",
+              "runtime": {
+                "type": "js"
+              },
+              "preview": "preview.png"
+            }
+          ]
+        }
+      },
+      "platforms": [
+        {
+          "st": "r",
+          "dw": 480
+        },
+        {
+          "st": "s",
+          "dw": 390
+        },
+        {
+          "st": "b",
+          "dw": 194
+        }
+      ]
+    }
+  },
+  "i18n": {
+    "en-US": {
+      "appName": "NinjaSugar"
+    }
+  },
+  "defaultLanguage": "en-US"
+}
